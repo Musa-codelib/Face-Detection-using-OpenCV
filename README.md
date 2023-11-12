@@ -24,6 +24,8 @@ Here is a breakdown of the key components and functions used in the code:
 
 - **cv2.VideoCapture(0)**: This line initializes the camera capture object, allowing you to access the live video stream from the default camera (usually the built-in webcam). You can replace `0` with another number to access a different camera if you have multiple cameras.
 
+- **Note**: In code file "Face detection in video.ipynb" you should assign the path of your video(.mp4 file) to the 'video_path'.
+
 - **cv2.CascadeClassifier**: This class is used to load the Haar Cascade classifier for face detection. The `haarcascade_frontalface_default.xml` file is a pre-trained classifier provided by OpenCV, and it's located in the `cv2.data.haarcascades` directory.
 
 - **cv2.cvtColor**: This function converts the frame to grayscale. Grayscale images are easier to process for face detection as they reduce the complexity of color information.
